@@ -1,0 +1,37 @@
+[
+  {
+    "Title": "ccc",
+    "Author": "ccc",
+    "PublishYear": 209,
+    "ISBN": "b",
+    "IsLoaned": false
+  },
+  {
+    "Title": "c",
+    "Author": "c",
+    "PublishYear": 3,
+    "ISBN": "c",
+    "IsLoaned": true
+  },
+  {
+    "Title": "How to read water",
+    "Author": "Tristan Gooley",
+    "PublishYear": 2012,
+    "ISBN": "123",
+    "IsLoaned": false
+  },
+  {
+    "Title": "Army of none ",
+    "Author": "Paul Scharre",
+    "PublishYear": 2014,
+    "ISBN": "456",
+    "IsLoaned": false
+  },
+  {
+    "Title": "Random book",
+    "Author": "Random author",
+    "PublishYear": 1999,
+    "ISBN": "789",
+    "IsLoaned": false
+  }
+]

@@ -1,0 +1,14 @@
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\bin\Debug\net8.0\ConsoleLibrary.exe
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\bin\Debug\net8.0\ConsoleLibrary.deps.json
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\bin\Debug\net8.0\ConsoleLibrary.runtimeconfig.json
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\bin\Debug\net8.0\ConsoleLibrary.dll
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\bin\Debug\net8.0\ConsoleLibrary.pdb
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.AssemblyInfoInputs.cache
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.AssemblyInfo.cs
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.csproj.CoreCompileInputs.cache
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.dll
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\refint\ConsoleLibrary.dll
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.pdb
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.genruntimeconfig.cache
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ref\ConsoleLibrary.dll
