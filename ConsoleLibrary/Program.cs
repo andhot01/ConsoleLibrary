@@ -9,6 +9,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        string json = File.ReadAllText("json.json");
+        List<Book> books = JsonSerializer.Deserialize<List<Book>>(json);
         bool exit = false;
 
         while (!exit)
@@ -50,9 +52,6 @@ class Program
         void AddBook()
         {
             Book newBook = new();
-            List<Book> books = new();
-            string existingJson = File.ReadAllText("json.json");
-            books = JsonSerializer.Deserialize<List<Book>>(existingJson);
             
             Console.WriteLine("Enter the title of the book: ");
             newBook.Title = Console.ReadLine();
@@ -65,41 +64,27 @@ class Program
             
             books.Add(newBook);
             
-            string json = JsonSerializer.Serialize(books, new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            });
-            File.WriteAllText("json.json", json);
+            Serialize();
             
             Console.WriteLine("Book added");
         }
 
         void DelBook()
         {
-            string json = File.ReadAllText("json.json");
-            List<Book> books = JsonSerializer.Deserialize<List<Book>>(json);
-            
             Console.WriteLine("Enter the ISBN of the book you want to delete: ");
             string isbnDelBook = Console.ReadLine();
             
             Book bookToDel = books.Find(b => b.ISBN == isbnDelBook);
             books.Remove(bookToDel);
             
-            json = JsonSerializer.Serialize(books, new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            });
-            File.WriteAllText("json.json", json);
+            Serialize();
             
             Console.WriteLine("Book deleted");
         }
 
         void EditBook()
         {
-            string json = File.ReadAllText("json.json");
-            List<Book> books = JsonSerializer.Deserialize<List<Book>>(json);
-            
-            Console.WriteLine("Enter the ISBN of the book you want to delete: ");
+            Console.WriteLine("Enter the ISBN of the book you want to edit: ");
             string isbnEditBook = Console.ReadLine();
             
             Book bookToEdit = books.Find(b => b.ISBN == isbnEditBook);
@@ -111,33 +96,31 @@ class Program
             Console.WriteLine("Edit the year of publication: ");
             bookToEdit.PublishYear = Convert.ToInt32(Console.ReadLine());
             
-            json = JsonSerializer.Serialize(books, new JsonSerializerOptions()
-            {
-                WriteIndented = true
-            });
-            File.WriteAllText("json.json", json);
+            Serialize();
             
             Console.WriteLine("Book edited");
         }
 
         void LoanBook()
         {
-            string json = File.ReadAllText("json.json");
-            List<Book> books = JsonSerializer.Deserialize<List<Book>>(json);
-            
             Console.WriteLine("Enter the ISBN of the book you want to loan: ");
             string isbnLoanBook = Console.ReadLine();
             
             Book bookToLoan = books.Find(b => b.ISBN == isbnLoanBook);
             bookToLoan.IsLoaned = true;
             
+            Serialize();
+            
+            Console.WriteLine("Book loaned");
+        }
+
+        void Serialize()
+        {
             json = JsonSerializer.Serialize(books, new JsonSerializerOptions()
             {
                 WriteIndented = true
             });
             File.WriteAllText("json.json", json);
-            
-            Console.WriteLine("Book loaned");
         }
     }
 }

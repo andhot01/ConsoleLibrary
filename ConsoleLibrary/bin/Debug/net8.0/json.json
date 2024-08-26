@@ -33,5 +33,12 @@
     "PublishYear": 1999,
     "ISBN": "789",
     "IsLoaned": false
+  },
+  {
+    "Title": "Edited title",
+    "Author": "Same author",
+    "PublishYear": 1977,
+    "ISBN": "12",
+    "IsLoaned": true
   }
 ]

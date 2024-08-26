@@ -12,3 +12,4 @@ C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\refi
 C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.pdb
 C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.genruntimeconfig.cache
 C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ref\ConsoleLibrary.dll
+C:\Users\andra\RiderProjects\ConsoleLibrary\ConsoleLibrary\obj\Debug\net8.0\ConsoleLibrary.sourcelink.json
