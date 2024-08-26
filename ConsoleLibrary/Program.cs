@@ -15,13 +15,7 @@ class Program
 
         while (!exit)
         {
-            Console.WriteLine("Library Menu");
-            Console.WriteLine("1. Add a book");
-            Console.WriteLine("2. Delete a book");
-            Console.WriteLine("3. Edit a book");
-            Console.WriteLine("4. Loan a book");
-            Console.WriteLine("5. Exit");
-            Console.Write("Enter your choice: ");
+            MenuOptions();
 
             string input = Console.ReadLine();
             switch (input)
@@ -121,6 +115,17 @@ class Program
                 WriteIndented = true
             });
             File.WriteAllText("json.json", json);
+        }
+
+        void MenuOptions()
+        {
+            Console.WriteLine("Library Menu");
+            Console.WriteLine("1. Add a book");
+            Console.WriteLine("2. Delete a book");
+            Console.WriteLine("3. Edit a book");
+            Console.WriteLine("4. Loan a book");
+            Console.WriteLine("5. Exit");
+            Console.Write("Enter your choice: ");
         }
     }
 }
