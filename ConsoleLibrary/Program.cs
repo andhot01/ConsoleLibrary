@@ -1,8 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using System.Text.Json;
+﻿using System.Text.Json;
 using ConsoleLibrary;
 
 class Program
