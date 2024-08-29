@@ -13,6 +13,8 @@ public class Book
     public bool IsLoaned { get; set; } 
     public Guid? UserID { get; set; }
     
+    public BookRepository br = new();
+    
     public void AddBook(List<Book> books)
     {
         Book newBook = new();
@@ -31,6 +33,7 @@ public class Book
         Serialize(books);
             
         Console.WriteLine("Book added");
+        br.AddBook(newBook);
     }
 
     public void DelBook(List<Book> books)
@@ -44,6 +47,7 @@ public class Book
         Serialize(books);
             
         Console.WriteLine("Book deleted");
+        br.DelBook(bookToDel);
     }
 
     public void EditBook(List<Book> books)
@@ -63,6 +67,20 @@ public class Book
         Serialize(books);
             
         Console.WriteLine("Book edited");
+        br.EditBook(bookToEdit);
+    }
+    
+    public void LoanBook(List<Book> books)
+    {
+        Console.WriteLine("Enter the ISBN of the book you want to loan: ");
+        string isbnLoanBook = Console.ReadLine();
+            
+        Book bookToLoan = books.Find(b => b.ISBN == isbnLoanBook);
+        bookToLoan.IsLoaned = true;
+            
+        Serialize(books);
+            
+        Console.WriteLine("Book loaned");
     }
     
     public void Serialize(List<Book> books)

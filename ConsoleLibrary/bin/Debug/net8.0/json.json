@@ -46,5 +46,13 @@
     "ISBN": "12",
     "IsLoaned": true,
     "UserID": null
+  },
+  {
+    "Title": "Edited book for db",
+    "Author": "Author",
+    "YearOfPublication": 1987,
+    "ISBN": "123456789",
+    "IsLoaned": false,
+    "UserID": null
   }
 ]

@@ -42,7 +42,7 @@ class Program
                     librarian.EditBook(books);
                     break;
                 case "4":
-                    system.LoanBook(books);
+                    librarian.LoanBook(books);
                     break;
                 case "5":
                     system.ShowBooks(books);
