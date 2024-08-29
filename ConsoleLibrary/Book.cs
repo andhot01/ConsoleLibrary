@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 
 namespace ConsoleLibrary;
 
@@ -7,8 +8,9 @@ public class Book
     public string Title { get; set; }
     public string Author { get; set; }
     public int YearOfPublication { get; set; }
+    [Key]
     public string ISBN { get; set; }
-    public bool IsLoaned { get; set; }
+    public bool IsLoaned { get; set; } 
     public Guid? UserID { get; set; }
     
     public void AddBook(List<Book> books)
@@ -74,6 +76,6 @@ public class Book
     
     public override string ToString()
     {
-        return $"Title: {Title}, Author: {Author}, Year of publication: {YearOfPublication}, ISBN: {ISBN}, Is loaned: {IsLoaned}";
+        return $"Title: {Title}, Author: {Author}, Year of publication: {YearOfPublication}, ISBN: {ISBN}";
     }
 }

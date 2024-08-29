@@ -9,6 +9,6 @@ public class LibraryContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=EASV-DB4.easv.dk;Database=Andra_ConsoleLibrary;User Id=CSe2023t_t_3;Password=CSe2023tT3#23; TrustServerCert:True;");
+        optionsBuilder.UseSqlServer("Server=EASV-DB4.easv.dk;Database=Andra_ConsoleLibrary;User Id=CSe2023t_t_3;Password=CSe2023tT3#23; TrustServerCertificate=True;");
     }
 }

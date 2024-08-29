@@ -1,5 +1,4 @@
-﻿using System.Linq.Expressions;
-using System.Text.Json;
+﻿using System.Text.Json;
 using ConsoleLibrary;
 
 class Program
@@ -11,6 +10,20 @@ class Program
         bool exit = false;
         Book librarian = new Book();
         BookKeeping system = new BookKeeping();
+        BookRepository br = new BookRepository();
+        
+        List<Book> repBooks = br.GetBooks();
+        if (repBooks != null && repBooks.Count > 0)
+        {
+            foreach (var book in repBooks)
+            {
+                Console.WriteLine(book.ToString());
+            }
+        }
+        else
+        {
+            Console.WriteLine("No books in library");
+        }
 
         while (!exit)
         {

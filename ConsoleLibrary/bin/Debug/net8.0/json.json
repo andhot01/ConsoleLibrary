@@ -2,43 +2,49 @@
   {
     "Title": "ccc",
     "Author": "ccc",
-    "PublishYear": 209,
+    "YearOfPublication": 0,
     "ISBN": "b",
-    "IsLoaned": false
+    "IsLoaned": false,
+    "UserID": null
   },
   {
     "Title": "c",
     "Author": "c",
-    "PublishYear": 3,
+    "YearOfPublication": 0,
     "ISBN": "c",
-    "IsLoaned": true
+    "IsLoaned": true,
+    "UserID": null
   },
   {
     "Title": "How to read water",
     "Author": "Tristan Gooley",
-    "PublishYear": 2012,
+    "YearOfPublication": 0,
     "ISBN": "123",
-    "IsLoaned": false
+    "IsLoaned": false,
+    "UserID": null
   },
   {
     "Title": "Army of none ",
     "Author": "Paul Scharre",
-    "PublishYear": 2014,
+    "YearOfPublication": 0,
     "ISBN": "456",
-    "IsLoaned": false
+    "IsLoaned": false,
+    "UserID": null
   },
   {
     "Title": "Random book",
     "Author": "Random author",
-    "PublishYear": 1999,
+    "YearOfPublication": 0,
     "ISBN": "789",
-    "IsLoaned": false
+    "IsLoaned": false,
+    "UserID": null
   },
   {
     "Title": "Edited title",
     "Author": "Same author",
-    "PublishYear": 1977,
+    "YearOfPublication": 0,
     "ISBN": "12",
-    "IsLoaned": true
+    "IsLoaned": true,
+    "UserID": null
   }
 ]
