@@ -1,6 +1,6 @@
 ﻿namespace ConsoleLibrary;
 
-public class BookKeeping
+public class LibraryKeeping
 {
     public void ShowBooks(List<Book> books)
     {
